@@ -49,8 +49,8 @@ class Portfolio:
         self.mode = 0
         """
         Se me ocurre una flag para definir si se querie usar otro tipo de libreria para optimizar el rebalance o sugerencia de otras acciones. El modo 0 seria seria el clawsico 60/40
-        """
-         """ Ejemplo de formato de targt allcoations
+        -----------------------------------------------------------------------------------
+         Ejemplo de formato de targt allcoations
         {"AAPL":0.60
         "META":0.4}
         Ejemlop de formato pra current_shares
@@ -133,5 +133,6 @@ if __name__ == "__main__":
     print(dummy_test.rebalance())
     
     
+
 
 
