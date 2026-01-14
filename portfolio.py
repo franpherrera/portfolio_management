@@ -46,11 +46,16 @@ class Portfolio:
         
         self.target_allocation = pd.Series(target_allocation)
         self.current_shares = pd.Series(current_shares)
-        self.mode = 0 ## Se me ocurre una flag para definir si se querie usar una otro tipo de libreria para optimizar el rebalance o sugerencia de otras acciones
-        
+        self.mode = 0
         """
+        Se me ocurre una flag para definir si se querie usar otro tipo de libreria para optimizar el rebalance o sugerencia de otras acciones. El modo 0 seria seria el clawsico 60/40
+        """
+         """ Ejemplo de formato de targt allcoations
         {"AAPL":0.60
         "META":0.4}
+        Ejemlop de formato pra current_shares
+        {"AAPL":1000
+        "META":500}
         """
     def target_checker(self):
         pass
@@ -128,4 +133,5 @@ if __name__ == "__main__":
     print(dummy_test.rebalance())
     
     
+
 
